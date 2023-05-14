@@ -1,0 +1,93 @@
+body {
+    color: #999;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    margin-top: 50px;
+    margin-left: auto;
+	margin-right: auto;
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper_active {
+    cursor: url('../img/hammer.svg'), pointer;
+}
+
+.wrapper_active:active {
+    cursor: url('../img/hammer_b.svg'), pointer; 
+}
+
+.text {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    background: rgb(108, 124, 98);
+    border-radius: 25%;
+}
+
+.active {
+    background-color: rgb(166, 204, 224);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper_active > .active:hover {
+    background-color: rgb(62, 81, 106);
+}
+
+.wrapper_active > .active:active {
+    background-color: rgb(255, 0, 0);
+}
+
+.display_none {
+    display: none;
+}
+
+.buttons {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+button {
+    box-sizing: border-box;
+    border: none;
+    width: 300px;
+    height: 80px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #af8686;
+}
+
+.start-game {
+    background-color: #0b6224;
+}
+
+.stop-game {
+    background-color: #683737;
+}
