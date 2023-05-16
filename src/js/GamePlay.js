@@ -97,6 +97,8 @@ export default class GamePlay {
   checkClick(e) {
     if (e.closest('.active')) {
       this.hit += 1;
+      this.cells[this.index].classList.remove('active');
+      this.cells[this.index].innerHTML = '';
     } else {
       this.miss += 1;
     }
